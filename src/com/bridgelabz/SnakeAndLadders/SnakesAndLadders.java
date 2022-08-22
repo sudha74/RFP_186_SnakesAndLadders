@@ -21,6 +21,9 @@ public class SnakesAndLadders {
         if (currentPosition < START_POSITION) {
             currentPosition = 0;
         }
+        if (currentPosition > 100) {
+            currentPosition -= dienum;
+        }
         System.out.println(currentPosition);
     }
 
