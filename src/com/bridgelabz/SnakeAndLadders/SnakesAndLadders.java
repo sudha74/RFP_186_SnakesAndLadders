@@ -5,5 +5,6 @@ public class SnakesAndLadders {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Snakes And Ladders");
+        int num = (int) (Math.random() * 10) % 6 + 1;
     }
 }
