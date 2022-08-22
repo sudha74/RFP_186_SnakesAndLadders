@@ -6,6 +6,7 @@ public class SnakesAndLadders {
     static final int IF_LADDER = 1;
     static final int IF_SNAKE = 2;
     static int currentPosition = 0;
+    static int die = 0;
 
     public static void main(String[] args) {
         System.out.println("Welcome to Snakes And Ladders");
@@ -25,8 +26,10 @@ public class SnakesAndLadders {
             if (currentPosition > 100) {
                 currentPosition -= dienum;
             }
-            System.out.println(currentPosition);
+            System.out.println("currentPosition is :" + currentPosition);
+            die++;
         }
+        System.out.println("Total number of times Die rolled are : " + die);
 
     }
 }
